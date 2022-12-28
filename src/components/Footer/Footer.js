@@ -6,14 +6,14 @@ function Footer() {
       <FooterContents>
         <div className="contectBox">
           <h2>How to Contact</h2>
-          <ul>
-            <li>
+          <div className="contectContents">
+            <p>
               <IoCall /> 010-3831-6930
-            </li>
-            <li>
+            </p>
+            <p>
               <IoMail /> dbal6930@gmail.com
-            </li>
-          </ul>
+            </p>
+          </div>
         </div>
         <div className="copyright">
           <h2>SEONG YU MI</h2>
@@ -42,21 +42,24 @@ const FooterContents = styled.header`
     margin: 0;
   }
   .contectBox {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    ul {
-      padding: 0;
-    }
-    li {
-      list-style: none;
+    .contectContents {
       font-size: 1.2rem;
-      margin: 15px 0;
+      margin: 30px 0;
+      p {
+        display: flex;
+        margin: 20px 0;
+        gap: 10px;
+      }
     }
   }
   .copyright {
     text-align: right;
     margin: 0;
     p {
-      margin: 0;
+      margin: 3px 0;
     }
   }
 `;
