@@ -5,7 +5,7 @@ function Footer() {
     <FooterContainer>
       <FooterContents>
         <div className="contectBox">
-          <h2>How to Contact</h2>
+          <h3>How to Contact</h3>
           <div className="contectContents">
             <p>
               <IoCall /> 010-3831-6930
@@ -35,9 +35,9 @@ const FooterContents = styled.header`
   padding: 40px 35px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1140px;
   color: #ffffff;
-  h2 {
+  h3 {
     font-size: 2rem;
     margin: 0;
   }

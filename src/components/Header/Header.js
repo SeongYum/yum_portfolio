@@ -33,7 +33,7 @@ const HeaderContainer = styled.header`
 `;
 const HeaderContents = styled.div`
   width: 100%;
-  max-width: 1280px;
+  max-width: 1140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
