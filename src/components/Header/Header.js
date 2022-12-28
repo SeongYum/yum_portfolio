@@ -21,13 +21,17 @@ function Header() {
 export default Header;
 
 const HeaderContainer = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* width: 100%; */
   background-color: #d8a19f;
-  position: relative;
-  height: 50px;
+  height: 65px;
   display: flex;
   justify-content: center;
 `;
-const HeaderContents = styled.header`
+const HeaderContents = styled.div`
   width: 100%;
   max-width: 1280px;
   display: flex;
@@ -37,6 +41,7 @@ const HeaderContents = styled.header`
   .name {
     color: #ffffff;
     font-weight: 600;
+    font-size: 1.1rem;
   }
   .menuList {
     display: flex;

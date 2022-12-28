@@ -45,7 +45,7 @@ const MainContainer = styled.div`
     }
   }
 `;
-const MainContents = styled.header`
+const MainContents = styled.div`
   color: #ffffff;
   display: flex;
   flex-direction: column;
