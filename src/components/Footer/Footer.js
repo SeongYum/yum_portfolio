@@ -17,7 +17,7 @@ function Footer() {
         </div>
         <div className="copyright">
           <h2>SEONG YU MI</h2>
-          <p>@Copyright Kim hee su. All rights reserved.</p>
+          <p>@Copyright Seong Yu mi. All rights reserved.</p>
         </div>
       </FooterContents>
     </FooterContainer>
@@ -32,7 +32,7 @@ const FooterContainer = styled.div`
   justify-content: center;
 `;
 const FooterContents = styled.header`
-  padding: 40px 35px;
+  padding: 50px 35px;
   margin: 0 auto;
   width: 100%;
   max-width: 1140px;

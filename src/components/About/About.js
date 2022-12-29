@@ -24,9 +24,9 @@ function About() {
             {'\n'}
             <Bold>“백번의 생각보다 한 번의 행동이 낫다”</Bold> 저의 좌우명
             입니다. {'\n'}
-            <Bold>새로운 시도</Bold>를 두려워하지 않는,
-            <Bold>말보단 행동</Bold>으로 실천하는
-            <Bold>프론트엔드 개발자</Bold>가 되겠습니다.
+            새로운 시도를 두려워하지 않는,
+            <Bold>말보단 행동으로 실천하는 프론트엔드 개발자</Bold>가
+            되겠습니다.
           </div>
         </div>
         <div className="information">
@@ -63,24 +63,28 @@ function About() {
 export default About;
 
 const AboutContainer = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
   padding: 50px 0;
 `;
 const AboutContents = styled.div`
   margin: 0 auto;
   width: 90%;
   max-width: 1140px;
-  height: 90%;
-  border-radius: 30px;
+  /* height: 90%; */
+  border-radius: 50px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  padding: 90px 40px;
   .title {
     h2 {
-      padding: 40px;
+      width: 330px;
+      padding: 40px 40px 70px 40px;
       font-size: 2.5rem;
+      background: linear-gradient(to right, #fd7e20, #588fc8);
+      color: transparent;
+      -webkit-background-clip: text;
     }
   }
   .introduction {
@@ -97,6 +101,8 @@ const AboutContents = styled.div`
     .writing {
       padding: 20px;
       white-space: pre-wrap;
+      line-height: 40px;
+      font-size: 1.1rem;
     }
   }
 
@@ -108,14 +114,21 @@ const AboutContents = styled.div`
     div {
       padding: 20px;
       width: 33.3333%;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       display: flex;
       align-items: center;
       gap: 10px;
     }
     svg {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
+      /* color: #588fc8; */
     }
   }
 `;
-const Bold = styled.span``;
+const Bold = styled.span`
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #fd7e20, #588fc8);
+  color: transparent;
+  -webkit-background-clip: text;
+`;
