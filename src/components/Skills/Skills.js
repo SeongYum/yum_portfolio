@@ -30,7 +30,7 @@ function Skills() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <Container>
+    <Container id="SKILLS">
       <SkillsContents>
         <div className="title">
           <h2>SKILLS</h2>
@@ -89,7 +89,7 @@ const SkillsContents = styled.div`
     }
     .strongSkill {
       padding: 10px 20px;
-      color: #eb8e6c;
+      color: #fb803d;
     }
   }
 `;

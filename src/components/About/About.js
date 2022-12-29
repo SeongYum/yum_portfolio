@@ -10,7 +10,7 @@ import {
 } from 'react-icons/io5';
 function About() {
   return (
-    <AboutContainer>
+    <AboutContainer id="ABOUT ME">
       <AboutContents>
         <div className="title">
           <h2>ABOUT ME</h2>

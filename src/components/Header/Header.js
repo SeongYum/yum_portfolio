@@ -1,17 +1,45 @@
 import styled from 'styled-components';
+import { useEffect, useState, useCallback } from 'react';
+import { Link } from 'react-scroll';
 
 function Header() {
+  const menuList = ['ABOUT ME', 'SKILLS', 'PROJECTS'];
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const updateScroll = useCallback(() => {
+    setScrollPosition(window.scrollY);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', updateScroll);
+    window.onbeforeunload = function pushRefresh() {
+      window.scrollTo(0, 0);
+    };
+  }, []);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer scrollPosition={scrollPosition}>
       <HeaderContents>
-        <div className="name">SEONG YU MI</div>
+        <div className="name">
+          <Link to="Main" spy={true} smooth={true} duration={500}>
+            SEONG YU MI
+          </Link>
+        </div>
         <div className="menuList">
-          <ul>
-            <li>HOME</li>
-            <li>ABOUT ME</li>
-            <li>SKILLS</li>
-            <li>PROJECT</li>
-          </ul>
+          {menuList.map((menu) => {
+            return (
+              <Link
+                to={menu}
+                spy={false}
+                smooth={true}
+                duration={500}
+                key={menu}
+              >
+                <div className="manuEl">{menu}</div>
+              </Link>
+            );
+          })}
         </div>
       </HeaderContents>
     </HeaderContainer>
@@ -26,7 +54,8 @@ const HeaderContainer = styled.header`
   left: 0;
   right: 0;
   /* width: 100%; */
-  background-color: #d8a19f;
+  background-color: ${(props) =>
+    props.scrollPosition ? '#d8a19f' : 'transparents'};
   height: 65px;
   display: flex;
   justify-content: center;
@@ -42,10 +71,12 @@ const HeaderContents = styled.div`
     color: #ffffff;
     font-weight: 600;
     font-size: 1.1rem;
+    cursor: pointer;
   }
   .menuList {
     display: flex;
-    li {
+    .manuEl {
+      cursor: pointer;
       list-style: none;
       flex: 1 0 auto;
       padding: 0 0 0 50px;

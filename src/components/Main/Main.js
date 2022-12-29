@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 function Main() {
   return (
-    <MainContainer>
+    <MainContainer id="Main">
       <MainContents>
         <h1>PORTFOLIO</h1>
         <div className="name">SEONG YU MI . FRONTEND</div>
