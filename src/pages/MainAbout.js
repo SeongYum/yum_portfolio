@@ -28,7 +28,7 @@ const Container = styled.div`
     radial-gradient(at 0% 0%, hsla(15, 72%, 76%, 1) 0px, transparent 50%);
   background-size: 200% 200%;
 
-  animation: Gradient 7s ease infinite;
+  animation: Gradient 6s ease infinite;
 
   @keyframes Gradient {
     0% {

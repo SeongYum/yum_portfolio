@@ -7,17 +7,22 @@ function Footer() {
         <div className="contectBox">
           <h3>How to Contact</h3>
           <div className="contectContents">
-            <p>
+            <div>
               <IoCall /> 010-3831-6930
-            </p>
-            <p>
-              <IoMail /> dbal6930@gmail.com
-            </p>
+            </div>
+            <div
+              className="mail"
+              onClick={() => window.open('mailto: dbal6930@gmail.com')}
+              aria-hidden="true"
+            >
+              <IoMail />
+              dbal6930@gmail.com
+            </div>
           </div>
         </div>
-        <div className="copyright">
+        <div className="copyRight">
           <h2>SEONG YU MI</h2>
-          <p>@Copyright Seong Yu mi. All rights reserved.</p>
+          <p>© 2022. Seong Yu mi. All rights reserved.</p>
         </div>
       </FooterContents>
     </FooterContainer>
@@ -28,11 +33,9 @@ export default Footer;
 
 const FooterContainer = styled.div`
   background-color: #d8a19f;
-  display: flex;
-  justify-content: center;
 `;
 const FooterContents = styled.header`
-  padding: 50px 35px;
+  padding: 40px 35px;
   margin: 0 auto;
   width: 100%;
   max-width: 1140px;
@@ -44,18 +47,27 @@ const FooterContents = styled.header`
   .contectBox {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    justify-content: last baseline;
     .contectContents {
-      font-size: 1.2rem;
       margin: 30px 0;
-      p {
+      font-size: 1.2rem;
+      div {
         display: flex;
         margin: 20px 0;
         gap: 10px;
       }
+      .mail {
+        width: 250px;
+        cursor: pointer;
+        white-space: nowrap;
+        :hover {
+          transform: scale(1.07);
+          transition: 0.5s;
+        }
+      }
     }
   }
-  .copyright {
+  .copyRight {
     text-align: right;
     margin: 0;
     p {

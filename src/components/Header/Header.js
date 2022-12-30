@@ -23,7 +23,7 @@ function Header() {
       <HeaderContents>
         <div className="name">
           <Link to="Main" spy={true} smooth={true} duration={500}>
-            SEONG YU MI
+            Yum&apos;s Portfolio
           </Link>
         </div>
         <div className="menuList">
@@ -56,6 +56,7 @@ const HeaderContainer = styled.header`
   /* width: 100%; */
   background-color: ${(props) =>
     props.scrollPosition ? '#d8a19f' : 'transparents'};
+  transition: background-color 0.2s;
   height: 65px;
   display: flex;
   justify-content: center;
@@ -66,24 +67,24 @@ const HeaderContents = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+
   .name {
     color: #ffffff;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
   .menuList {
     display: flex;
     .manuEl {
       cursor: pointer;
-      list-style: none;
-      flex: 1 0 auto;
-      padding: 0 0 0 50px;
+      white-space: nowrap;
+      margin-left: 50px;
       color: #ffffff;
-      text-decoration: none;
-      font-weight: 500;
-      display: inline-block;
+      :hover {
+        transform: scale(1.07);
+        transition: 0.5s;
+      }
     }
   }
 `;

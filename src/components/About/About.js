@@ -38,7 +38,11 @@ function About() {
             <IoCall />
             010-3831-6930
           </div>
-          <div className="mail">
+          <div
+            className="mail"
+            onClick={() => window.open('mailto: dbal6930@gmail.com')}
+            aria-hidden="true"
+          >
             <IoMail />
             dbal6930@gmail
           </div>
@@ -50,7 +54,11 @@ function About() {
             <IoMapSharp />
             서울특별시 관악구
           </div>
-          <div className="git">
+          <div
+            className="git"
+            onClick={() => window.open('https://github.com/SeongYum')}
+            aria-hidden="true"
+          >
             <IoLogoGithub />
             GitHub
           </div>
@@ -63,26 +71,25 @@ function About() {
 export default About;
 
 const AboutContainer = styled.div`
-  /* height: 100vh; */
-  padding: 50px 0;
+  padding: 120px 0;
 `;
 const AboutContents = styled.div`
   margin: 0 auto;
   width: 90%;
   max-width: 1140px;
   /* height: 90%; */
-  border-radius: 50px;
+  border-radius: 3rem;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 90px 40px;
+  padding: 65px 50px;
   .title {
     h2 {
       width: 330px;
       padding: 40px 40px 70px 40px;
       font-size: 2.5rem;
-      background: linear-gradient(to right, #fd7e20, #588fc8);
+      background: linear-gradient(to right, #eead96, #8ba4bc);
       color: transparent;
       -webkit-background-clip: text;
     }
@@ -121,14 +128,20 @@ const AboutContents = styled.div`
     }
     svg {
       font-size: 1.9rem;
-      /* color: #588fc8; */
+    }
+    .mail,
+    .git {
+      cursor: pointer;
+      :hover {
+        color: #eead96;
+      }
     }
   }
 `;
 const Bold = styled.span`
   font-size: 1.2rem;
   font-weight: 600;
-  background: linear-gradient(to right, #fd7e20, #588fc8);
+  background: linear-gradient(to right, #eead96, #8ba4bc);
   color: transparent;
   -webkit-background-clip: text;
 `;
