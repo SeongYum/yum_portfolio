@@ -61,6 +61,7 @@ const SkillsContents = styled.div`
   .strongFlex {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 1.2rem;
     .skillsBox {
       margin: 10px;

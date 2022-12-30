@@ -4,7 +4,7 @@ function SkillsBox({ skill, idx }) {
   const isEven = (idx + 1) % 2 === 0;
   return (
     <Container>
-      <div className={isEven ? 'left' : 'right'}>
+      <div className={isEven ? 'right' : 'left'}>
         <SkillsContentsBox>
           <div className="skillstitle">{skill.title}</div>
           <div className="skillsContents">
@@ -26,9 +26,13 @@ const Container = styled.div`
   margin: 40px 25px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  .right {
+    display: flex;
+    justify-content: right;
+  }
   .left {
-    margin-left: 25.73rem;
+    display: flex;
+    justify-content: left;
   }
 `;
 

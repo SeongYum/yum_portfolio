@@ -74,8 +74,7 @@ export const projects = [
       'keyframes을 사용한 애니메이션을 배경이나 버튼에 적용하는 과정이 재밌었습니다.',
     ],
     github: 'https://github.com/SeongYum/yum_portfolio',
-    website:
-      'https://velog.velcdn.com/images/dbal6930/post/3ef4dc60-91ca-4a34-83b0-b804ee1fec5e/image.gif',
+    website: 'https://yum-portfolio.vercel.app/',
     figma:
       'https://www.figma.com/file/SGoM8B4juWK9PP0CzsctBo/Untitled?node-id=0%3A1&t=JQa91IypD0G9rRKX-1',
   },
