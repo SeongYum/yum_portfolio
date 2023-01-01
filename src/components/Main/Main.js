@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from './../../styles/media';
 
 function Main() {
   return (
@@ -31,8 +32,29 @@ const MainContents = styled.div`
     margin: 27px 0;
     font-weight: 800;
     font-size: 7rem;
+    ${media.large`
+     font-size: 5rem;
+     margin: 20px 0;
+       `}
+    ${media.medium`
+     font-size: 3rem;
+     margin: 15px 0;
+       `}
+    ${media.small`
+     font-size: 2.3rem;
+     margin: 10px 0;
+       `}
   }
   .name {
     font-size: 2.1rem;
+    ${media.large`
+     font-size: 1.6rem;
+       `}
+    ${media.medium`
+     font-size: 1.1rem;
+       `}
+    ${media.small`
+     font-size: 0.8rem;
+      `}
   }
 `;

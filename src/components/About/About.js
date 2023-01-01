@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Yumi from './../../img/yumiphoto.png';
+import media from './../../styles/media';
 import {
   IoCall,
   IoMail,
@@ -84,6 +85,9 @@ const AboutContents = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 65px 50px;
+  ${media.medium`
+  padding: 30px;
+       `}
   .title {
     h2 {
       width: 330px;
@@ -92,6 +96,15 @@ const AboutContents = styled.div`
       background: linear-gradient(to right, #eead96, #8ba4bc);
       color: transparent;
       -webkit-background-clip: text;
+      ${media.medium`
+         width: 290px;
+         font-size: 2rem;
+         padding: 30px 30px 50px 30px;
+       `}
+      ${media.small`
+       font-size: 1.8rem;
+       padding: 30px 30px 40px 30px;
+       `}
     }
   }
   .introduction {
@@ -99,17 +112,36 @@ const AboutContents = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    ${media.medium`
+       flex-direction: column;
+       `}
     .photo {
       padding: 10px;
       img {
         width: 250px;
+        ${media.medium`
+         width: 200px;
+       `}
+        ${media.small`
+         width: 170px;
+       `}
       }
     }
     .writing {
       padding: 20px;
       white-space: pre-wrap;
-      line-height: 40px;
+      line-height: 3rem;
       font-size: 1.1rem;
+      ${media.medium`
+        text-align: center;
+        font-size: 1rem;
+        line-height: 2rem;
+       `}
+      ${media.small`
+       font-size: 0.85rem;
+       line-height: 1.6rem;
+       
+       `}
     }
   }
 
@@ -117,17 +149,42 @@ const AboutContents = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 30px 40px;
+    padding: 30px;
+    ${media.medium`
+         padding: 20px;
+       `}
+    ${media.small`
+       padding: 10px;
+       `}
     div {
       padding: 20px;
       width: 33.3333%;
       font-size: 1.15rem;
       display: flex;
+      justify-content: center;
       align-items: center;
       gap: 10px;
+      ${media.large`
+         width: 50%;
+       `}
+      ${media.medium`
+         width: 100%;
+         font-size: 1.1rem;
+         padding: 13px;
+       `}
+       ${media.small`
+       font-size: 1rem;
+       padding: 12px;
+       `}
     }
     svg {
       font-size: 1.9rem;
+      ${media.medium`
+      font-size: 1.3rem;
+       `}
+      ${media.small`
+       font-size: 1rem;
+       `}
     }
     .mail,
     .git {
@@ -144,4 +201,11 @@ const Bold = styled.span`
   background: linear-gradient(to right, #eead96, #8ba4bc);
   color: transparent;
   -webkit-background-clip: text;
+  ${media.medium`
+        text-align: center;
+        font-size: 1.12rem;
+       `}
+  ${media.small`
+       font-size: 0.96rem;
+       `}
 `;
