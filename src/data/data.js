@@ -57,7 +57,7 @@ export const projects = [
   {
     title: 'Portfolio',
     date: '2022.12 (개인 프로젝트)',
-    img: 'https://velog.velcdn.com/images/dbal6930/post/72b1d3ab-d8f1-492c-b7a0-2881481822ce/image.gif',
+    img: 'https://velog.velcdn.com/images/dbal6930/post/16a7bb97-2413-4de4-a12d-c63624b37731/image.gif',
     about: [
       '포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.',
       '자기소개와 기술 스택, 프로젝트에 대해 소개합니다.',
