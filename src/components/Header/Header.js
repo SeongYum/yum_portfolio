@@ -54,8 +54,9 @@ function Header() {
                 smooth={true}
                 duration={500}
                 key={menu}
+                onClick={() => setBtnInfo(true)}
               >
-                <MeneEl onClick={() => setBtnInfo(true)}>{menu}</MeneEl>
+                <MeneEl>{menu}</MeneEl>
               </Link>
             );
           })}
