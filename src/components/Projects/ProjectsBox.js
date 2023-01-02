@@ -107,7 +107,7 @@ const ProjectsContentsBox = styled.div`
        font-size: 1.55rem;
      `}
       ${media.small`
-      font-size: 1.27rem;
+      font-size: 1.2rem;
       `}
     }
     .date {
@@ -116,7 +116,7 @@ const ProjectsContentsBox = styled.div`
        font-size: 0.95rem;
      `}
       ${media.small`
-       font-size: 0.9rem;
+       font-size: 0.85rem;
       `}
     }
   }

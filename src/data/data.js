@@ -35,7 +35,7 @@ export const projects = [
     about: [
       '스페인어로 출구를 의미하는 [SALIDA]는 재난 발생 후 대피소로 모일 때, 특정 대피소에 사람들이 몰려서 발생할 수 있는 2차 사고의 위험을 줄이기 위해 원하는 대피소에 몇 명의 인원이 있는지 확인 및 예약 할 수 있는 서비스입니다.',
     ],
-    skills: ['React', 'javaScript', 'styled-components', 'redux', 'AXIOS'],
+    skills: ['React', 'javaScript', 'redux', 'styled-components', 'AXIOS'],
     todo: [
       '레이아웃 구성 및 Figma(로고 및 전체 프로젝트 UI 디자인)',
       '커뮤니티 페이지 전체 구현(비품 현황, 물품 나눔, 대피소 후기)',
@@ -62,7 +62,7 @@ export const projects = [
       '포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.',
       '자기소개와 기술 스택, 프로젝트에 대해 소개합니다.',
     ],
-    skills: ['React', 'javaScript', 'styled-components', 'React-scroll'],
+    skills: ['React', 'javaScript', 'React-scroll', 'styled-components'],
     todo: [
       '레이아웃 구성 및 Figma(로고 및 전체 프로젝트 UI 디자인)',
       'react-scroll 라이브러리를 통해 각 메뉴를 클릭했을 때 해당 컴포넌트로 이동할수 있도록 구현',

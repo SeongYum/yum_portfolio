@@ -47,6 +47,7 @@ const FooterContents = styled.header`
     margin: 0;
     ${media.medium`
        font-size: 1.7rem;
+       text-align:center;
        `}
     ${media.small`
        font-size: 1.4rem;
@@ -56,21 +57,32 @@ const FooterContents = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: last baseline;
+    ${media.medium`
+      justify-content: center;
+      align-items: center;
+       `}
+    ${media.small`
+      justify-content: center;
+       `}
     .contectContents {
-      margin-top: 20px;
+      margin-top: 10px;
       font-size: 1.2rem;
       ${media.medium`
        font-size: 1rem;
-       margin-top: 15px;
+       margin-top: 0;
        `}
       ${media.small`
        font-size: 0.95rem;
-       margin-top: 10px;
+       margin-top: 0;
        `}
       div {
         display: flex;
-        margin: 20px 0;
+        margin: 15px 0;
         gap: 10px;
+        ${media.medium`
+          justify-content: center;
+          align-items: center;
+       `}
       }
       .mail {
         width: 250px;
@@ -85,11 +97,11 @@ const FooterContents = styled.header`
   }
   .copyRight {
     text-align: right;
-    margin: 0;
     p {
-      margin: 3px 0;
-      ${media.small`
+      margin-top: 10px;
+      ${media.medium`
        font-size: 0.9rem;
+       text-align:center;
        `}
     }
   }

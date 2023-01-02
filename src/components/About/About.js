@@ -213,6 +213,6 @@ const Bold = styled.span`
         font-size: 1.12rem;
        `}
   ${media.small`
-       font-size: 1rem;
+       font-size: 0.96rem;
        `}
 `;

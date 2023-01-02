@@ -48,7 +48,7 @@ const SkillsContentsBox = styled.div`
      padding: 2rem;
        `}
   ${media.small`
-     font-size: 0.95rem;
+     font-size: 0.87rem;
        `}
     .skillstitle {
     font-size: 1.5rem;
