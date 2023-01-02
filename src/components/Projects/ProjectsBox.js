@@ -264,12 +264,14 @@ const ProjectsContentsBox = styled.div`
         align-items: center;
         gap: 0.3rem;
         font-size: 1rem;
+        text-decoration: none;
         ${media.small`
          font-size: 0.87rem;
        `}
         svg {
           width: 1.7rem;
           height: 1.7rem;
+          text-decoration: none;
           ${media.small`
            width: 1.4rem;
            height: 1.4rem;
