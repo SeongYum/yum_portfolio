@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from './../../styles/media';
 
 function SkillsBox({ skill, idx }) {
   const isEven = (idx + 1) % 2 === 0;
@@ -39,11 +40,18 @@ const Container = styled.div`
 const SkillsContentsBox = styled.div`
   background: rgba(255, 255, 255, 0.7);
   border-radius: 1.7rem;
-  width: 38rem;
-  padding: 1.7rem;
-  margin: 0.5rem 0;
-  .skillstitle {
-    font-size: 1.3rem;
+  width: 40.5rem;
+  padding: 2.2rem;
+  font-size: 1.04rem;
+  ${media.medium`
+     font-size: 0.92rem;
+     padding: 2rem;
+       `}
+  ${media.small`
+     font-size: 0.8rem;
+       `}
+    .skillstitle {
+    font-size: 1.5rem;
     padding-bottom: 10px;
     margin-bottom: 10px;
     font-weight: 600;
@@ -51,6 +59,12 @@ const SkillsContentsBox = styled.div`
     border-bottom: 1.5px solid transparent;
     border-image: linear-gradient(to right, #fd7e20, #588fc8);
     border-image-slice: 1;
+    ${media.medium`
+     font-size: 1.2rem;
+       `}
+    ${media.small`
+     font-size: 1rem;
+       `}
   }
   .skillsContents {
     .contents {

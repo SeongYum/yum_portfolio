@@ -98,12 +98,12 @@ const AboutContents = styled.div`
       -webkit-background-clip: text;
       ${media.medium`
          width: 290px;
-         font-size: 2rem;
+         font-size: 2.2rem;
          padding: 30px 30px 50px 30px;
        `}
       ${media.small`
-       font-size: 1.8rem;
-       padding: 30px 30px 40px 30px;
+         font-size: 1.9rem;
+         padding: 30px 30px 40px 30px;
        `}
     }
   }
@@ -116,7 +116,7 @@ const AboutContents = styled.div`
        flex-direction: column;
        `}
     .photo {
-      padding: 10px;
+      padding: 15px;
       img {
         width: 250px;
         ${media.medium`
@@ -126,6 +126,9 @@ const AboutContents = styled.div`
          width: 170px;
        `}
       }
+      ${media.medium`
+         padding: 0;
+       `}
     }
     .writing {
       padding: 20px;
@@ -136,11 +139,12 @@ const AboutContents = styled.div`
         text-align: center;
         font-size: 1rem;
         line-height: 2rem;
+        padding: 20px;
        `}
       ${media.small`
-       font-size: 0.85rem;
-       line-height: 1.6rem;
-       
+         font-size: 0.85rem;
+         line-height: 1.6rem;
+         padding: 10px;
        `}
     }
   }
@@ -151,10 +155,12 @@ const AboutContents = styled.div`
     justify-content: space-between;
     padding: 30px;
     ${media.medium`
-         padding: 20px;
+        padding: 20px;
+        padding-top: 0;
        `}
     ${media.small`
-       padding: 10px;
+        padding: 10px;
+        padding-top: 0;
        `}
     div {
       padding: 20px;
@@ -170,11 +176,11 @@ const AboutContents = styled.div`
       ${media.medium`
          width: 100%;
          font-size: 1.1rem;
-         padding: 13px;
+         padding: 12px;
        `}
        ${media.small`
-       font-size: 1rem;
-       padding: 12px;
+         font-size: 1rem;
+         padding: 11px;
        `}
     }
     svg {
