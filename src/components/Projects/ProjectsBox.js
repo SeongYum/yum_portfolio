@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { IoLogoGithub, IoLink } from 'react-icons/io5';
+import media from './../../styles/media';
+
 function ProjectsBox({ project }) {
   return (
     <Container>
@@ -86,8 +88,8 @@ const Container = styled.div`
 
 const ProjectsContentsBox = styled.div`
   width: 100%;
-  border-radius: 3rem;
-  padding: 60px 40px;
+  border-radius: 2rem;
+  padding: 3.5rem 1.8rem;
   background-color: #ffffff;
   .titleBox {
     padding-bottom: 2rem;
@@ -96,29 +98,65 @@ const ProjectsContentsBox = styled.div`
       font-size: 1.7rem;
       font-weight: 600;
       padding-bottom: 10px;
+      ${media.medium`
+       font-size: 1.55rem;
+     `}
+      ${media.small`
+      font-size: 1.27rem;
+      `}
     }
     .date {
       color: #767676;
+      ${media.medium`
+       font-size: 0.95rem;
+     `}
+      ${media.small`
+       font-size: 0.9rem;
+      `}
     }
   }
   .projectContents {
     display: flex;
     justify-content: center;
     align-items: center;
+    ${media.medium`
+    flex-direction: column;
+   `}
     .imageBox {
       width: 48%;
+      ${media.medium`
+        width: 100%;
+        padding: 0 0 1rem 0;
+        border-bottom: 1.5px solid transparent;
+        border-image: linear-gradient(to right, #fd7e20, #588fc8);
+        border-image-slice: 1;
+      `}
       img {
         width: 100%;
       }
     }
     .content {
-      line-height: 1.4rem;
+      line-height: 1.45rem;
       width: 50%;
       margin-left: 1rem;
+      font-size: 1.07rem;
+      ${media.large`
+        font-size: 1rem;
+      `}
+      ${media.medium`
+         width: 100%;
+         padding: 1rem 0 0 0;
+       `}
+      ${media.small`
+         font-size: 0.9rem;
+       `}
       .title {
         font-weight: 600;
         font-size: 1.1rem;
         padding-bottom: 3px;
+        ${media.small`
+         font-size: 1rem;
+       `}
       }
       .skillsBox {
         margin-top: 3px;
@@ -156,6 +194,9 @@ const ProjectsContentsBox = styled.div`
         );
       background-origin: border-box;
       background-clip: content-box, border-box;
+      ${media.small`
+         width: 8rem;
+       `}
       :hover {
         border: 0.15rem solid transparent;
         border-radius: 30px;
@@ -218,9 +259,16 @@ const ProjectsContentsBox = styled.div`
         align-items: center;
         gap: 0.3rem;
         font-size: 1rem;
+        ${media.small`
+         font-size: 0.87rem;
+       `}
         svg {
           width: 1.7rem;
           height: 1.7rem;
+          ${media.small`
+           width: 1.4rem;
+           height: 1.4rem;
+       `}
         }
       }
     }

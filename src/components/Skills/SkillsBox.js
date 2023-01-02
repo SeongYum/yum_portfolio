@@ -44,11 +44,11 @@ const SkillsContentsBox = styled.div`
   padding: 2.2rem;
   font-size: 1.04rem;
   ${media.medium`
-     font-size: 0.92rem;
+     font-size: 1rem;
      padding: 2rem;
        `}
   ${media.small`
-     font-size: 0.8rem;
+     font-size: 0.95rem;
        `}
     .skillstitle {
     font-size: 1.5rem;
@@ -60,10 +60,10 @@ const SkillsContentsBox = styled.div`
     border-image: linear-gradient(to right, #fd7e20, #588fc8);
     border-image-slice: 1;
     ${media.medium`
-     font-size: 1.2rem;
+     font-size: 1.25rem;
        `}
     ${media.small`
-     font-size: 1rem;
+     font-size: 1.1rem;
        `}
   }
   .skillsContents {

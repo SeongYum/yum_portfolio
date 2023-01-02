@@ -142,7 +142,7 @@ const AboutContents = styled.div`
         padding: 20px;
        `}
       ${media.small`
-         font-size: 0.85rem;
+         font-size: 0.9rem;
          line-height: 1.6rem;
          padding: 10px;
        `}
@@ -212,6 +212,6 @@ const Bold = styled.span`
         font-size: 1.12rem;
        `}
   ${media.small`
-       font-size: 0.96rem;
+       font-size: 1rem;
        `}
 `;

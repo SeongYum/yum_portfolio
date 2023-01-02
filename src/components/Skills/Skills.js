@@ -102,7 +102,7 @@ const SkillsContents = styled.div`
       padding: 10px 20px;
       color: #fb803d;
       ${media.large`
-       font-size: 8px 17px;
+      padding: 8px 17px;
       `}
       ${media.medium`
        padding: 7px 12px;
