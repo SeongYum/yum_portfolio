@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { IoCall, IoMail } from 'react-icons/io5';
+import media from './../../styles/media';
+
 function Footer() {
   return (
     <FooterContainer>
@@ -21,8 +23,8 @@ function Footer() {
           </div>
         </div>
         <div className="copyRight">
-          <h2>SEONG YU MI</h2>
-          <p>© 2022. Seong Yu mi. All rights reserved.</p>
+          <h3>Seong Yu mi</h3>
+          <p>© 2023. Seong Yu mi. All rights reserved.</p>
         </div>
       </FooterContents>
     </FooterContainer>
@@ -43,14 +45,28 @@ const FooterContents = styled.header`
   h3 {
     font-size: 2rem;
     margin: 0;
+    ${media.medium`
+       font-size: 1.7rem;
+       `}
+    ${media.small`
+       font-size: 1.4rem;
+       `}
   }
   .contectBox {
     display: flex;
     flex-direction: column;
     justify-content: last baseline;
     .contectContents {
-      margin: 30px 0;
+      margin-top: 20px;
       font-size: 1.2rem;
+      ${media.medium`
+       font-size: 1rem;
+       margin-top: 15px;
+       `}
+      ${media.small`
+       font-size: 0.95rem;
+       margin-top: 10px;
+       `}
       div {
         display: flex;
         margin: 20px 0;
@@ -72,6 +88,9 @@ const FooterContents = styled.header`
     margin: 0;
     p {
       margin: 3px 0;
+      ${media.small`
+       font-size: 0.9rem;
+       `}
     }
   }
 `;

@@ -79,11 +79,16 @@ function ProjectsBox({ project }) {
 export default ProjectsBox;
 
 const Container = styled.div`
-  margin: 40px 0;
-  padding: 20px 0;
+  padding: 2.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  ${media.medium`
+   padding: 2rem 0;
+     `}
+  ${media.small`
+   padding: 1.5rem 0;
+      `}
 `;
 
 const ProjectsContentsBox = styled.div`

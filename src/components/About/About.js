@@ -91,19 +91,20 @@ const AboutContents = styled.div`
   .title {
     h2 {
       width: 330px;
-      padding: 40px 40px 70px 40px;
+      padding: 40px 40px 50px 40px;
       font-size: 2.5rem;
       background: linear-gradient(to right, #eead96, #8ba4bc);
       color: transparent;
       -webkit-background-clip: text;
       ${media.medium`
-         width: 290px;
+         width: 100%;
+         text-align:center;
          font-size: 2.2rem;
-         padding: 30px 30px 50px 30px;
+         padding: 40px 30px 40px 30px;
        `}
       ${media.small`
          font-size: 1.9rem;
-         padding: 30px 30px 40px 30px;
+         padding: 20px 20px 30px 20px;
        `}
     }
   }

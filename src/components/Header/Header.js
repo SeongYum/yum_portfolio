@@ -88,7 +88,7 @@ const HeaderContents = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1.4rem 2rem;
+  padding: 1.7rem 2rem;
   overflow: hidden;
   .name {
     color: #ffffff;
@@ -97,7 +97,7 @@ const HeaderContents = styled.div`
     cursor: pointer;
   }
   ${media.medium`
-     padding: 1.5rem 2rem 1.5rem;
+     padding: 1.7rem 2rem 1.7rem;
        `}
 `;
 const MenuList = styled.div`
@@ -108,10 +108,6 @@ const MenuList = styled.div`
     flex-direction: column;
     width: 100%;
     max-height: ${(props) => (props.BtnInfo ? '0' : '30rem')};
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    text-transform: capitalize;
        `}
 `;
 const MeneEl = styled.div`
@@ -124,7 +120,9 @@ const MeneEl = styled.div`
     transition: 0.5s;
   }
   ${media.medium`
-    margin-top: 2rem;
+    width: 6rem;
+    margin-left: 0.5rem;
+    margin-top: 2rem ;
        `}
 `;
 const MenuBtn = styled.button`

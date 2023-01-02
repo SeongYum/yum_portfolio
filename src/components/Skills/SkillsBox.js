@@ -24,7 +24,7 @@ function SkillsBox({ skill, idx }) {
 export default SkillsBox;
 
 const Container = styled.div`
-  margin: 40px 25px;
+  margin: 2.5rem 1rem;
   display: flex;
   flex-direction: column;
   .right {

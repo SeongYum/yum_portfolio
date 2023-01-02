@@ -58,19 +58,18 @@ const SkillsContents = styled.div`
        `}
   .title {
     h2 {
-      width: 330px;
       padding: 50px 40px;
       font-size: 2.5rem;
       color: #eb8e6c;
       text-shadow: 4px 4px 0px #00a59b;
       ${media.medium`
-         width: 290px;
+         text-align:center;
          font-size: 2.2rem;
          padding: 40px 30px;
        `}
       ${media.small`
          font-size: 1.9rem;
-         padding: 40px 30px;
+         padding: 30px 20px;
        `}
     }
   }
