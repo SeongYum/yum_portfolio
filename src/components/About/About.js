@@ -1,14 +1,7 @@
 import styled from 'styled-components';
 import Yumi from './../../img/yumiphoto.png';
 import media from './../../styles/media';
-import {
-  IoCall,
-  IoMail,
-  IoPerson,
-  IoLogoGithub,
-  IoCalendarClear,
-  IoMapSharp,
-} from 'react-icons/io5';
+import { IoCall, IoMail, IoPerson, IoLogoGithub } from 'react-icons/io5';
 function About() {
   return (
     <AboutContainer id="ABOUT ME">
@@ -25,7 +18,7 @@ function About() {
             {'\n'}
             <Bold>“백번의 생각보다 한 번의 행동이 낫다”</Bold> 저의 좌우명
             입니다. {'\n'}
-            새로운 시도를 두려워하지 않는,{'\n'}
+            새로운 시도와 변화를 두려워하지 않는,{'\n'}
             <Bold>말보단 행동으로 실천하는 프론트엔드 개발자</Bold>가
             되겠습니다.
           </div>
@@ -46,14 +39,6 @@ function About() {
           >
             <IoMail />
             dbal6930@gmail
-          </div>
-          <div className="birthday">
-            <IoCalendarClear />
-            1995.07.31
-          </div>
-          <div className="address">
-            <IoMapSharp />
-            서울특별시 관악구
           </div>
           <div
             className="git"
@@ -165,21 +150,18 @@ const AboutContents = styled.div`
        `}
     div {
       padding: 20px;
-      width: 33.3333%;
+      width: 50%;
       font-size: 1.15rem;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px;
-      ${media.large`
-         width: 50%;
-       `}
       ${media.medium`
          width: 100%;
          font-size: 1.1rem;
          padding: 12px;
        `}
-       ${media.small`
+      ${media.small`
          font-size: 1rem;
          padding: 11px;
        `}
